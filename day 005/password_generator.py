@@ -12,4 +12,4 @@ random_numbers = [random.choice(string.digits) for n in range(numbers)]
 password = random_letters + random_symbols + random_numbers
 
 random.shuffle(password)
-print(''.join(password))
+print('Here is your password: '+''.join(password))
