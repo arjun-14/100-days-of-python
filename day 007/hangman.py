@@ -5,10 +5,12 @@ word_list = ["aardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
 print(chosen_word)
 
-guess = input('Guess a letter : ')
+display = ['_' for x in chosen_word]
 
-for i in chosen_word:
-    if i == guess:
-        print('Right')
-    else:
-        print('Wrong')
+guess = input('Guess a letter : ').lower()
+
+for letter in range(len(chosen_word)):
+    if chosen_word[letter] == guess:
+        display[letter] = guess
+       
+print(display)
