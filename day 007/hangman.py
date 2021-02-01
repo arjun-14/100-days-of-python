@@ -7,11 +7,12 @@ stages = art.stages
 lives = 6
 
 chosen_word = random.choice(word_list)
-print(chosen_word)
+
 
 display = ['_' for x in chosen_word]
 guessed_letters = []
 print(art.logo)
+print(' '.join(display))
 
 while(True):
     guess = input('Guess a letter : ').lower()
@@ -32,6 +33,7 @@ while(True):
         print('You guessed '+guess+', that\'s not in the word. You lose a life.')
         if(lives == 0):
             print('You lose')
+            print('The correct word was '+chosen_word)
             break
     print(' '.join(display))
     print(stages[lives])
