@@ -15,7 +15,7 @@ while(repeat =='yes'):
             print('Invalid input. Please enter a number.')
     shift_number = int(shift_number)    
     
-    if shift_number > 26:
+    while(shift_number > 26):
         shift_number = shift_number - 26
     
     if(user_input == 'encode'):
