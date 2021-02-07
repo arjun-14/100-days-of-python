@@ -78,10 +78,4 @@ while input('Do you want to play a game of blackjack? Press "y" to start, "n" to
                     print('Draw')
                 else:
                     print('You Win!')
-                break
-                    
-                    
-                
-        
-    
-        
+                break        
