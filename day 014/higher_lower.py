@@ -7,7 +7,6 @@ print(art.logo)
 option_a = random.choice(game_data.data)
 option_b = random.choice(game_data.data)
 score = 0
-game_over = False
 user_guess = ''
 while True:
     print('') if score == 0 else print(f'You are correct ! Current score: {score}')
