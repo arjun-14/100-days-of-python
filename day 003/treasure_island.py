@@ -41,4 +41,4 @@ else:
     elif(colour == 'yellow'):
       print('You win!')
     else:
-      print('You lose.Game over.')
+      print('You lose. Game over.')
